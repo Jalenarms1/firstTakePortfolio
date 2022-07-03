@@ -283,6 +283,7 @@ div.about-sec h1{
 .pcontainer div a img:hover{
     border:3px solid white;
 }
+
 .pcontainer div{
     position: relative;
     
@@ -341,10 +342,126 @@ div.about-sec h1{
     right:0;
 }
 
+.footer a img{
+    width:50px;
+    display:block;
+}
+.footer{
+    display:flex;
+    padding:20px;
+    border-top:2px solid #1e1e1e;
+    transition: background-color 1s;
+}
+.footer div{
+    padding-left:60px;
+    padding-right:60px;
+}
+.footer .email{
+    display:flex;
+    align-items: center;
+    border-right: 1px solid black;
+    margin-right:2%;
+}
+.footer .email p{
+    margin-left:20px;
+    padding-right: 20px;
+    border:1px inset #1e1e1e;
+    border-radius:3px;
+    font-weight:500;
+}
+.footer .phone{
+    display:flex;
+    align-items: center;
+    border-left:1px solid black;
+}
+.footer .phone p{
+    margin-left:20px;
+    padding-right: 15px;
+    border:1px inset #1e1e1e;
+    border-radius:3px;
+    font-weight:500;
+    width:8em;
+}
+.footer h1{
+    align-self: center;
+    margin-left: 40px;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding: 0 10px;
+}
+@media screen and (max-width: 979px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer a{
+        width:35px;
+        border-radius: 4px;
+        border:4px solid black;
+        outline:1px solid white;
+    }
+    .footer h1{
+        margin-bottom:20px;
+        border:none;
+        border-bottom: 2px solid white;
+        padding: 0 50px 20px;
+    }
+    .email{
+        align-self: center;
+        border-left:1px solid black;
+        width:400px;
+        justify-content: space-evenly;
+        padding-top:3%; padding-bottom:3%;
+        
+    }
+    .footer .email p{
+        border:2px inset white;
+    }
+    .footer .phone p{
+        border:2px inset white;
+
+    }
+    .footer a img{
+        width:100%;
+    }
+
+    .footer .email{
+        border:none;
+        border-bottom:1px solid white;
+
+    }
+   .footer{
+    background-color: #000;
+    color:#fff;
+   }
+    .email h2{
+        margin-right:4%;
+    }
+
+    .footer .phone{
+        border:none;
+        border-bottom:1px solid white;
+
+
+    }
+    
+    .phone{
+        align-self: center;
+        border:none;
+        width:350px;
+        justify-content: space-evenly;
+        padding-top:3%; padding-bottom:3%;
+
+    }
+}
+
 @media screen and (max-width:480px) {
     #title4{
         transform: rotate(90deg);
         top:5%;
+    }
+    .footer h1{
+        align-self: flex-start;
+        
     }
 }
 
@@ -382,6 +499,20 @@ div.about-sec h1{
     }
 }
 @media screen and (min-width:1100px) {
+    #title4{
+        transform: rotate(35deg);
+        left:20%;
+        top:13%;
+    }
+}
+@media screen and (min-width:1000px) {
+    #title4{
+        transform: rotate(43deg);
+        left:18%;
+        top:16%;
+    }
+}
+@media screen and (min-width:1200px) {
     #title4{
         transform: rotate(35deg);
         left:20%;
