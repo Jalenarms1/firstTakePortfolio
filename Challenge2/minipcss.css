@@ -337,6 +337,7 @@ div.about-sec h1{
     border-right:1px solid black;
     padding: 0 10px;
 }
+
 @media screen and (max-width: 979px){
     .footer{
         flex-direction: column;
@@ -486,14 +487,12 @@ div.about-sec h1{
         background-color:black;
         
     }
-    @media screen and (max-width:650px){
-        .containabout{
-            padding-top:15%;
+    .containabout{
+            padding-top:10%;
         }
         .projects{
             padding-top:10%;
         }
-    }
     .about-sec{
         width:90%;
         margin: auto;
@@ -521,6 +520,19 @@ div.about-sec h1{
     .funFacts h3{
         text-align:center;
         width:45%;
+    }
+}
+@media screen and (max-width:650px){
+    .containabout{
+        padding-top:15%;
+    }
+    .projects{
+        padding-top:10%;
+    }
+}
+@media screen and (max-width:550px){
+    .containabout{
+        padding-top:15%;
     }
 }
 
